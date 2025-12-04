@@ -12,7 +12,7 @@ warnings.filterwarnings('ignore')
 # CONFIGURACIÓN Y FUNCIONES BASE (DEL CÓDIGO COLAB ORIGINAL)
 # =========================================================
 
-BATCH_LIMIT = 100 
+BATCH_LIMIT = 200 
 DISPLAY_MAX_ROWS = 500
 
 WHITELIST_DOMAINS = [
@@ -631,7 +631,7 @@ def main_app2():
     st.markdown("---")
 
     st.subheader("Paso 1: Cargar Archivo")
-    st.info("Sube tu archivo (Excel o CSV). El análisis se ejecutará para un máximo de 100 dominios.")
+    st.info("Sube tu archivo (Excel o CSV). El análisis se ejecutará para un máximo de 200 dominios.")
     
     # --- Carga de Archivo ---
     uploaded_file = st.file_uploader(
@@ -796,3 +796,4 @@ def main_app2():
 
 if __name__ == '__main__':
     main_app2()
+
